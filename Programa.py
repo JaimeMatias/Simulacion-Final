@@ -97,19 +97,41 @@ archivo.write("Promedio de Permanencia: "+ '\n')
 for i in PPS:
     VAR10=i
     VAR11=(VAR10//3600)
-    VAR12=(VAR10%3600)/60
-    archivo.write(str(VAR11))
-    archivo.write(str(VAR12)+ '\n')
+    VAR12=(VAR10%3600)//60
+    archivo.write(str(int(VAR11)))
+    archivo.write(":")
+    archivo.write(str(int(VAR12)))
+    archivo.write(":")
+    archivo.write(str(int(VAR10-VAR11*3600-VAR12*60))+ '\n')
 archivo.write("Promedio Tiempo Espera: "+ '\n')
 for i in PTE:
-    archivo.write(str(i)+ '\n')
-
-
+    VAR10=i
+    VAR11=(VAR10//3600)
+    VAR12=(VAR10%3600)//60
+    archivo.write(str(int(VAR11)))
+    archivo.write(":")
+    archivo.write(str(int(VAR12)))
+    archivo.write(":")
+    archivo.write(str(int(VAR10-VAR11*3600-VAR12*60))+ '\n')
 archivo.write("Promedio Tiempo Atencion: "+ '\n')
 for i in PTA:
-    archivo.write(str(i)+ '\n')
+    VAR10=i
+    VAR11=(VAR10//3600)
+    VAR12=(VAR10%3600)//60
+    archivo.write(str(int(VAR11)))
+    archivo.write(":")
+    archivo.write(str(int(VAR12)))
+    archivo.write(":")
+    archivo.write(str(int(VAR10-VAR11*3600-VAR12*60))+ '\n')
 archivo.write("Promedio Tiempo Oscioso: "+ '\n')
 for i in PTO:
-    archivo.write(str(i)+ '\n')
+    VAR10=i
+    VAR11=(VAR10//3600)
+    VAR12=(VAR10%3600)//60
+    archivo.write(str(int(VAR11)))
+    archivo.write(":")
+    archivo.write(str(int(VAR12)))
+    archivo.write(":")
+    archivo.write(str(int(VAR10-VAR11*3600-VAR12*60))+ '\n')
 archivo.close()
 input()
