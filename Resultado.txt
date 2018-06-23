@@ -1,0 +1,8 @@
+Promedio de Permanencia: 
+7.058.15079884789108
+Promedio Tiempo Espera: 
+27880.025024714552
+Promedio Tiempo Atencion: 
+809.0229061589226
+Promedio Tiempo Oscioso: 
+0.468513084357731
